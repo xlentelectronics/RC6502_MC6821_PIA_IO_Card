@@ -18,7 +18,7 @@ the .asm file can directly be loaded into Krusader v1.3. Make sure before loadin
 
 There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This file is the WoZ monmitor compatible file. You can load the .woz file from the Woz Monitor in the same way by using _Send file ..._  
 
-![PINGPONG Running Light](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_0.jpg)
+![PINGPONG Running Light](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_0.jpg "Speedmeter start")
 ![Speedmeter Green](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_1.jpg)
 ![Speedmeter Yellow](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_2.jpg)
 ![Speedmeter Red](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_3.jpg) 
