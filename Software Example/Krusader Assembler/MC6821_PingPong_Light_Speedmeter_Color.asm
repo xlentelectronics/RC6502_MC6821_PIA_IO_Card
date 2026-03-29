@@ -1,0 +1,708 @@
+; MC6821 PIA IO PINGPONG
+; SPEEDMETER COLOR BAR
+; KRUSADER V1.3
+; (C) X-LENT ELECTRONICS
+
+; Start
+START LDA #$40
+ STA $02
+ LDA #$10
+ STA $03
+ LDA #$80
+ STA $04
+ LDA #$0C
+ STA $05
+ JSR CLRSCN
+ LDX #$00
+
+; Write banner
+TXTONE LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'M'
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #'6'
+ STA $0900,X
+ INX
+ LDA #'8'
+ STA $0900,X
+ INX
+ LDA #'2'
+ STA $0900,X
+ INX
+ LDA #'1'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'P'
+ STA $0900,X
+ INX
+ LDA #'I'
+ STA $0900,X
+ INX
+ LDA #'A'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'I'
+ STA $0900,X
+ INX
+ LDA #'O'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'P'
+ STA $0900,X
+ INX
+ LDA #'I'
+ STA $0900,X
+ INX
+ LDA #'N'
+ STA $0900,X
+ INX
+ LDA #'G'
+ STA $0900,X
+ INX
+ LDA #'P'
+ STA $0900,X
+ INX
+ LDA #'O'
+ STA $0900,X
+ INX
+ LDA #'N'
+ STA $0900,X
+ INX
+ LDA #'G'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'*'
+ STA $0900,X
+ INX
+ LDA #$0D
+ STA $0900,X
+ INX
+ LDA #$0A
+ STA $0900,X
+ INX
+ LDA #'('
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #')'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'X'
+ STA $0900,X
+ INX
+ LDA #'-'
+ STA $0900,X
+ INX
+ LDA #'L'
+ STA $0900,X
+ INX
+ LDA #'E'
+ STA $0900,X
+ INX
+ LDA #'N'
+ STA $0900,X
+ INX
+ LDA #'T'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'E'
+ STA $0900,X
+ INX
+ LDA #'L'
+ STA $0900,X
+ INX
+ LDA #'E'
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #'T'
+ STA $0900,X
+ INX
+ LDA #'R'
+ STA $0900,X
+ INX
+ LDA #'O'
+ STA $0900,X
+ INX
+ LDA #'N'
+ STA $0900,X
+ INX
+ LDA #'I'
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #'S'
+ STA $0900,X
+ INX
+ LDA #$0D
+ STA $0900,X
+ INX
+ LDA #$0A
+ STA $0900,X
+ INX
+ LDA #'F'
+ STA $0900,X
+ INX
+ LDA #'a'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #'t'
+ STA $0900,X
+ INX
+ LDA #'e'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'p'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #'e'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'+'
+ STA $0900,X
+ INX
+ LDA #','
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'S'
+ STA $0900,X
+ INX
+ LDA #'l'
+ STA $0900,X
+ INX
+ LDA #'o'
+ STA $0900,X
+ INX
+ LDA #'w'
+ STA $0900,X
+ INX
+ LDA #'e'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'p'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #'e'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'-'
+ STA $0900,X
+ INX
+ LDA #$0D
+ STA $0900,X
+ INX
+ LDA #$0A
+ STA $0900,X
+ INX
+ LDA #'P'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #'e'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #'t'
+ STA $0900,X
+ INX
+ LDA #'r'
+ STA $0900,X
+ INX
+ LDA #'l'
+ STA $0900,X
+ INX
+ LDA #'-'
+ STA $0900,X
+ INX
+ LDA #'C'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'t'
+ STA $0900,X
+ INX
+ LDA #'o'
+ STA $0900,X
+ INX
+ LDA #$20
+ STA $0900,X
+ INX
+ LDA #'s'
+ STA $0900,X
+ INX
+ LDA #'t'
+ STA $0900,X
+ INX
+ LDA #'o'
+ STA $0900,X
+ INX
+ LDA #'p'
+ STA $0900,X
+ INX
+ LDA #$0A
+ STA $0900,X
+ INX
+ LDA #$0D
+ STA $0900,X
+ INX
+ LDA #$00
+ STA $0900,X
+
+; Print text
+PRTMSG LDX #$00
+
+; Print loop
+PRTLP LDA $0900,X
+ BEQ INITLP
+ JSR $FFEF
+ INX
+ JMP PRTLP
+
+; Init PIA
+INITLP LDA #$00
+ STA $C001
+ LDA #$FF
+ STA $C000
+ LDA #$04
+ STA $C001
+ LDA #$FE
+ STA $C000
+ LDA #$00
+ STA $00F0
+ LDA #$0D
+ JSR $FFEF
+ LDA #$0A
+ JSR $FFEF
+ LDA #$0D
+ JSR $FFEF
+ LDA #$0A
+ JSR $FFEF
+ JSR SPDIND
+
+; Main loop
+MAINLP LDA $D011
+ BMI KEYCHK
+ JSR DELAY
+ LDA $00F0
+ BEQ LSHIFT
+
+; Shift right
+RSHIFT SEC
+ LDA $C000
+ ROR
+ STA $C000
+ CMP #$FF
+ BNE MAINLP
+ LDA #$FE
+ STA $C000
+ LDA #$00
+ STA $00F0
+ JMP MAINLP
+
+; Shift left
+LSHIFT SEC
+ LDA $C000
+ ROL
+ STA $C000
+ CMP #$FF
+ BNE MAINLP
+ LDA #$7F
+ STA $C000
+ LDA #$01
+ STA $00F0
+ JMP MAINLP
+
+; Key Check
+KEYCHK LDA $D010
+ AND #$7F
+ CMP #$03
+ BEQ STOP
+ CMP #$2B
+ BEQ FASTLP
+ CMP #$2D
+ BEQ SLOWLP
+ JMP MAINLP
+
+; Speed up
+FASTLP LDA $02
+ CMP #$02
+ BEQ MAINLP
+ SEC
+ SBC #$01
+ STA $02
+ LDA $05
+ CMP #$4C
+ BEQ FAST1
+ CLC
+ ADC #$01
+ STA $05
+
+; Max fix
+FAST1 JSR SPDIND
+ JMP MAINLP
+
+; Slow down
+SLOWLP LDA $02
+ CMP #$FF
+ BEQ MAINLP
+ CLC
+ ADC #$01
+ STA $02
+ LDA $05
+ CMP #$01
+ BEQ SLOW1
+ SEC
+ SBC #$01
+ STA $05
+
+; Min fix
+SLOW1 JSR SPDIND
+ JMP MAINLP
+
+; STOP
+STOP LDA #$FF
+ STA $C000
+ JMP $F000
+
+; Delay
+DELAY LDX $02
+
+; Outer loop
+DLYLP1 LDY #$FF
+
+; Inner loop
+DLYLP2 DEY
+ BNE DLYLP2
+ DEX
+ BNE DLYLP1
+ RTS
+
+; Clear Screen
+CLRSCN LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$32
+ JSR $FFEF
+ LDA #$4A
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$48
+ JSR $FFEF
+ RTS
+
+; Draw Speedmeter
+SPDIND LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$30
+ JSR $FFEF
+ LDA #$47
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$31
+ JSR $FFEF
+ LDA #$41
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$36
+ JSR $FFEF
+ LDA #$47
+ JSR $FFEF
+ LDA #'M'
+ JSR $FFEF
+ LDA #'I'
+ JSR $FFEF
+ LDA #'N'
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$34
+ JSR $FFEF
+ LDA #$34
+ JSR $FFEF
+ LDA #$47
+ JSR $FFEF
+ LDA #'M'
+ JSR $FFEF
+ LDA #'A'
+ JSR $FFEF
+ LDA #'X'
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$31
+ JSR $FFEF
+ LDA #$42
+ JSR $FFEF
+ LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$30
+ JSR $FFEF
+ LDA #$47
+ JSR $FFEF
+ LDA #'S'
+ JSR $FFEF
+ LDA #'p'
+ JSR $FFEF
+ LDA #'e'
+ JSR $FFEF
+ LDA #'e'
+ JSR $FFEF
+ LDA #'d'
+ JSR $FFEF
+ LDA #$20
+ JSR $FFEF
+ LDA #$7C
+ JSR $FFEF
+ LDA $05
+ CLC
+ ADC #$01
+ LSR
+ CMP #$25
+ BCC SPDOK
+ LDA #$25
+
+; Clamp val
+SPDOK STA $F1
+ LDA #$12
+ STA $F2
+ LDA #$1D
+ STA $F3
+ LDX #$00
+ JSR SETGRN
+
+; Green zone
+GREENLP CPX $F1
+ BCS ENDGRN
+ CPX $F2
+ BCS ENDGRN
+ LDA #$23
+ JSR $FFEF
+ INX
+ JMP GREENLP
+
+; End Green
+ENDGRN JSR SETDEF
+ JSR SETORG
+
+; Orange zone
+ORGLP CPX $F1
+ BCS ENDORG
+ CPX $F3
+ BCS ENDORG
+ LDA #$23
+ JSR $FFEF
+ INX
+ JMP ORGLP
+
+; End Orange
+ENDORG JSR SETDEF
+ JSR SETRED
+
+; Red zone
+REDLP CPX $F1
+ BCS ENDRED
+ LDA #$23
+ JSR $FFEF
+ INX
+ JMP REDLP
+
+; End Red
+ENDRED JSR SETDEF
+ LDA #$25
+ SEC
+ SBC $F1
+ TAX
+
+; Dashes
+DASHLP CPX #$00
+ BEQ DONE
+ LDA #$2D
+ JSR $FFEF
+ DEX
+ JMP DASHLP
+
+; Close Speedbar
+DONE LDA #$7C
+ JSR $FFEF
+ RTS
+
+; Green colomn
+SETGRN LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$33
+ JSR $FFEF
+ LDA #$32
+ JSR $FFEF
+ LDA #$6D
+ JSR $FFEF
+ RTS
+
+; Orange colomn
+SETORG LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$33
+ JSR $FFEF
+ LDA #$33
+ JSR $FFEF
+ LDA #$6D
+ JSR $FFEF
+ RTS
+
+; Red colomn
+SETRED LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$33
+ JSR $FFEF
+ LDA #$31
+ JSR $FFEF
+ LDA #$6D
+ JSR $FFEF
+ RTS
+
+; Reset colomn
+SETDEF LDA #$1B
+ JSR $FFEF
+ LDA #$5B
+ JSR $FFEF
+ LDA #$30
+ JSR $FFEF
+ LDA #$6D
+ JSR $FFEF
+ RTS
