@@ -14,7 +14,7 @@ In the Krusader Assembler folder the example MC6821_PingPong_Light_Speedmeter_Co
 
 The following hardware connection must be made to PORTA and PORTB. PORTA is connected to 8 LEDs. The anode of the LEDs is connected with a 1 kΩ resistor between Vcc and the corresponding pins PA0 through PA7. The .asm file can be loaded directly into Krusader v1.3. Make sure you have opened Krusader in edit mode (000) before loading the .asm file. If you use TeraTerm, you load the .asm via _Send file ..._ After successful load, assembler the file and run it via R $0300 (I assume you know how Krusader v1.3 works)
 
-There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This file is the WoZ monmitor compatible file. You can load the .woz file from the Woz Monitor in the same way by using _Send file ..._  
+There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This file is the WoZ monitor compatible file. You can load the .woz file from the Woz Monitor in the same way by using _Send file ..._  
 
 ![PINGPONG Running Light](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_0.jpg "Speedmeter at start")
 ![Speedmeter Green](/Software_Example/Krusader_Assembler/MC6821_PIA_PINGPONG_Speedmeter_Color_1.jpg "Speedmeter Green")
