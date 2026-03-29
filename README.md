@@ -1,7 +1,6 @@
 ﻿# RC6502 MC6821 PIA IO Card
 
-To have IO possibilities with the RC6502, a IO Card with the MC6821 PIA has been developed. To connect the card to the RC6502, just place it in the Backplane. Via jumper J4 you can place the card in the address range you prefer. The included software examples use the base address $C000.
-The hardware and software are open licensed.
+To provide I/O capabilities with the RC6502, an I/O card with the MC6821 PIA has been developed. To connect the card to the RC6502, simply insert it into the backplane. You can place the card in the desired address range using jumper J4. The included software samples use the base address $C000. The hardware and software have been developed under an open license.
 
 ![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_Card_TOP.jpg)
 ![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_Card.jpg)
