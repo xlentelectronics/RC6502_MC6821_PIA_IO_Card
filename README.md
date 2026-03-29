@@ -16,6 +16,7 @@ PORTA is connected to 8 LEDS. The Anode of the LEDS are connected with a resisto
 the .asm file can directly be loaded into Krusader v1.3. Make sure before loading the .asm file you have opend Krusader in Editting mode, 000. If you use TeraTerm, you load the .asm via _Send file ..._After successful load, assembler the file and run it via R $0300 (I assume you know how Krusader v1.3 works)
 
 There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This file is the WoZ monmitor compatible file. You can load the .woz file from the Woz Monitor in the same way by using _Send file ..._  
+
 ![PINGPONG Running Light](\Software Example\Krusader Assembler\MC6821_PIA_PINGPONG_Speedmeter_Color_0.jpg) 
 ![Speedmeter Green](\Software Example\Krusader Assembler\MC6821_PIA_PINGPONG_Speedmeter_Color_1.jpg) 
 ![Speedmeter Yellow](\Software Example\Krusader Assembler\MC6821_PIA_PINGPONG_Speedmeter_Color_2.jpg) 
@@ -31,15 +32,3 @@ Both MBASIC examples uses the same LED hardware connections as mentioned for the
 Start MBASIC and load the .bas file via _Send file ..._ and type RUN to execute the program.
 
 ![MBASIC ](\Software Example\MBASIC\MBASIC_MC6821_RL_Speed.jpg) 
- 
-
-
-
-
-
-
-
-=======
-# RC6502 MC6821 PIA IO Card
-MC6821 PIA IO Card for the RC6502 SBC
->>>>>>> fe3bcaef3ca0f992c9495c36016be798bf47ee52
