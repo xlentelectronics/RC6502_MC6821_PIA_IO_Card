@@ -27,7 +27,7 @@ There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This fi
 In the MBASIC folder there are 2 MBASIC examples, MBasic_MC6821_PIA_IO_RunningLight_PortA.bas and MBasic_MC6821_PIA_IO_RunningLight_Speed.bas.
 
 Both MBASIC examples uses the same LED hardware connections as mentioned for the PINGPONG Running Light. An additional piece of hardware is required for the MBasic_MC6821_PIA_IO_RunningLight_Speed.bas.
-Connect a push button via 10K resistor to Vcc and the other lead of the push button to GND. Connect PORTB PB7 to the 10K resistor. When you push the button, PB7 will go low.
+Connect a push button via 10K resistor to Vcc and the other lead of the push button to GND. Connect PORTB PB7 to the 10K resistor. When you push the button, PB7 will go low.
 
 Start MBASIC and load the .bas file via _Send file ..._ and type RUN to execute the program.
 
