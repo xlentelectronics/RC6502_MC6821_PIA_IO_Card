@@ -3,7 +3,8 @@
 To have IO possibilities with the RC6502, a IO Card with the MC6821 PIA has been developed. To connect the card to the RC6502, just place it in the Backplane. Via jumper J4 you can place the card in the address range you prefer. The included software examples use the base address $C000.
 The hardware and software are open licensed.
 
-![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_Card.jpg) ![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_TOP.jpg) 
+![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_Card.jpg)
+![Build MC6821 PIA IO Card](/RC6502_MC6821_PIA_Schematic/MC6821_PIA_IO_Card_TOP.jpg) 
 
 # Software Examples
 In the Software Example folder are some examples how to use the MC6821 PIA IO Card. The examples are created for Krusader v1.3 and for MBASIC.
