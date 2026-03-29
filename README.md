@@ -13,9 +13,7 @@ In the Software Example folder are some examples how to use the MC6821 PIA IO Ca
 ## Krusader assembler Example
 In the Krusader Assembler folder the example MC6821_PingPong_Light_Speedmeter_Color.asm can be found.  This is a fully compatible Krusader v1.3 program. The program lets 8 LEDS running in a pingpong way. The speed can be controlled via the + and - of the numeric keypad of the keyboard.
 
-The following hardware connection has to be made to PORTA and PORTB.
-PORTA is connected to 8 LEDS. The Anode of the LEDS are connected with a resistor of 1K between Vcc and corresponding pins PA0 to PA7.
-the .asm file can directly be loaded into Krusader v1.3. Make sure before loading the .asm file you have opend Krusader in Editting mode, 000. If you use TeraTerm, you load the .asm via _Send file ..._ After successful load, assembler the file and run it via R $0300 (I assume you know how Krusader v1.3 works)
+The following hardware connection must be made to PORTA and PORTB. PORTA is connected to 8 LEDs. The anode of the LEDs is connected with a 1 kΩ resistor between Vcc and the corresponding pins PA0 through PA7. The .asm file can be loaded directly into Krusader v1.3. Make sure you have opened Krusader in edit mode (000) before loading the .asm file. If you use TeraTerm, you load the .asm via _Send file ..._ After successful load, assembler the file and run it via R $0300 (I assume you know how Krusader v1.3 works)
 
 There is also as example the MC6821_PingPong_Light_Speedmeter_Color.woz. This file is the WoZ monmitor compatible file. You can load the .woz file from the Woz Monitor in the same way by using _Send file ..._  
 
